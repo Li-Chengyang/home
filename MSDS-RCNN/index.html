@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=960">
+<title>BMVC 2018 MSDS-RCNN</title>
+<link rel="stylesheet" type="text/css" href="css/site.20180824.css">
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="css/site.20180824-lteIE7.css">
+<![endif]-->
+</head>
+<body id="body">
+<div class="pos vis section">
+<div class="vis-2 pos-2 size cont">
+<p class="para"><span class="font">Multispectral Pedestrian Detection via Simultaneous Detection and Segmentation</span></p>
+</div>
+<div class="vis-2 pos-3 size-2 cont-2">
+<div class="vis-2 pos-4 size-3 cont-3">
+<p class="para-2"><span class="font-20">Chengyang Li</a></span></p>
+</div>
+<div class="vis-2 pos-5 size-3 cont-4">
+<p class="para-2"><span class="font-20">Dan Song</a></span></p>
+</div>
+<div class="vis-2 pos-6 size-3 cont-5">
+<p class="para-2"><span class="font-20">Ruofeng Tong</a></span></p>
+</div>
+<div class="vis-2 pos-7 size-3 cont-6">
+<p class="para-2"><span class="font-20">Min Tang</a></span></p>
+</div>
+</div>
+<div class="vis-2 pos-8 size-4 cont">
+<p class="para-2"><span class="font-3">BMVC 2018 | <span class="font-2"><a href="https://arxiv.org/abs/1808.04818">arXiv</a></span></span></p>
+</div>
+<div class="vis-2 pos-9 size-5 cont-2">
+<div class="vis-2 pos-4 size-5 colwrapper">
+<div class="vis-2 pos-4 size-6 cont-7">
+<picture class="img-2">
+<img src="images/overview.png" alt="" class="js img">
+</picture>
+</div>
+<div class="vis-1 pos-15 size-1 cont-1">
+<p class="para-4"><span class="font-3">Figure 1: Overview of the proposed MSDS-RCNN. The network architecture consists of a multispectral proposal network (MPN) to generate pedestrian proposals, and a subsequent multispectral classification network (MCN) to distinguish pedestrian instances from hard negatives. The unified network is learned by jointly optimizing pedestrian detection and semantic segmentation tasks. The final detections are obtained by integrating the outputs from different modalities as well as the two stages.
+</span></p>
+</div>
+</div>
+</div>
+<div class="vis-2 pos-11 size-8 cont">
+<p class="para-5"><span class="font-5">Abstract</span></p>
+<p class="para-4"><span class="font-3">Multispectral pedestrian detection has attracted increasing attention from the research community due to its crucial competence for many around-the-clock applications (e.g., video surveillance and autonomous driving), especially under insufficient illumination conditions. 
+We create a human baseline over the KAIST dataset and reveal that there is still a large gap between current top detectors and human performance. To narrow this gap, we propose a network fusion architecture, which consists of a multispectral proposal network to generate pedestrian proposals, and a subsequent multispectral classification network to distinguish pedestrian instances from hard negatives. The unified network is learned by jointly optimizing pedestrian detection and semantic segmentation tasks. The final detections are obtained by integrating the outputs from different modalities as well as the two stages. The approach significantly outperforms state-of-the-art methods on the KAIST dataset while remain fast. Additionally, we contribute a sanitized version of training annotations for the KAIST dataset, and examine the effects caused by different kinds of annotation errors. Future research of this problem will benefit from the sanitized version which eliminates the interference of annotation errors.</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-5">Detection Performance</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">We compare our MSDS-RCNN with existing methods, including ACF+T+THOG [1], Halfway Fusion [2], Fusion RPN [3], Fusion RPN+BF [3], IAF R-CNN [4] and IATDNN+IASS [5]. Fig. 2 illustrates the ROC curves.</span></p>
+</div>
+<div class="vis-2 pos-12 size-9 cont">
+<picture class="img-3">
+<img src="images/highlight.png" alt="" class="js img-4">
+</picture>
+</div>
+<div class="vis-2 pos-13 size-10 cont">
+<p class="para-4"><span class="font-3">Figure 2: Comparisons of detection results reported on the test set of KAIST dataset [1], in terms of Reasonable-all. Our method surpasses existing state-of-the-arts by a large margin (26% relative). About one third of the error is attributed to the annotation noise, which can be further eliminated using our sanitized training annotations.</span></p>
+</div>
+<div class="vis-2 pos-14 size-11 cont-9">
+<p class="para-5"><span class="font-5">Downloads</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Human Baseline: </span><span class="font-7"><a href="https://drive.google.com/open?id=1hNLSRPpQWRANf62kG58X6dI4uIMKwL3n">Google Drive</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Detection Results: </span><span class="font-7"><a href="https://drive.google.com/open?id=1MLejnwZr7C1imUa9emyVJiUH5CxbYw-T">Google Drive</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Sanitized Training Annotations: </span><span class="font-7"><a href="https://drive.google.com/open?id=1mKIzND2046aXHknzr28LJHvFH_6Ssa_q">Google Drive</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;KAIST Multispectral Pedestrian Dataset: </span><span class="font-7"><a href="https://sites.google.com/site/pedestrianbenchmark/download">Link to KAIST dataset</a></span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Improved Testing Annotations provided by Liu et al.: </span><span class="font-7"><a href="https://drive.google.com/open?id=0ByrJI3mShdW6YXBXVV9sUFkzbEk">Link to download</a></span><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;(Since the original annotations of the test set contain many problematic bounding boxes, we highly recommend you to report results using the improved testing annotations instead of the orignial ones to enable a reliable comparison.)</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-5">Codes</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon ...</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-5">Citation</span></p>
+<p class="para-7"><span class="font-3">@inproceedings{li2018multispectral,</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;title={Multispectral Pedestrian Detection via Simultaneous Detection and Segmentation},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;author={Li, Chengyang and Song, Dan and Tong, Ruofeng and Tang, Min},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;booktitle={British Machine Vision Conference (BMVC)},</span></p>
+<p class="para-7"><span class="font-3">&nbsp;&nbsp;&nbsp;&nbsp;year={2018},</span></p>
+<p class="para-7"><span class="font-3">}</span></p>
+<p class="para-4"><span class="font-3">&nbsp;</span></p>
+<p class="para-5"><span class="font-5">Reference</span></p>
+<p class="para-4"><span class="font-3">[1] Soonmin Hwang, Jaesik Park, Namil Kim, Yukyung Choi, and In So Kweon. Multispectral pedestrian detection: Benchmark dataset and baseline. In CVPR, pages 1037&ndash;1045, 2015.</span></p>
+<p class="para-4"><span class="font-3">[2] Jingjing Liu, Shaoting Zhang, Shu Wang, and Dimitris Metaxas. Multispectral deep neural networks for pedestrian detection. In BMVC, pages 73.1&ndash;73.13, 2016.</span></p>
+<p class="para-4"><span class="font-3">[3] Daniel König, Michael Adam, Christian Jarvers, Georg Layher, Heiko Neumann, and Michael Teutsch. Fully convolutional region proposal networks for multispectral person detection. In CVPRW, pages 243&ndash;250, 2017.</span></p>
+<p class="para-4"><span class="font-3">[4] Chengyang Li, Dan Song, Ruofeng Tong, and Min Tang. Illumination-aware faster r-cnn for robust multispectral pedestrian detection. arXiv preprint arXiv:1803.05347, 2018.</span><span class="font-3">&nbsp;</span></p>
+<p class="para-4"><span class="font-3">[5] Dayan Guan, Yanpeng Cao, Jun Liang, Yanlong Cao, and Michael Ying Yang. Fusion of multispectral data through illumination-aware deep neural networks for pedestrian
+detection. arXiv preprint arXiv:1802.09972, 2018.</span></p>
+</div>
+</div>
+var ver=RegExp(/Mozilla\/5\.0 \(Linux; .; Android ([\d.]+)/).exec(navigator.userAgent);if(ver&&parseFloat(ver[1])<5){document.getElementsByTagName('body')[0].className+=' whitespacefix';}
+</script>
+</body>
+</html>
